@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameCenter</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<body>
+    <header>
+        <id id="logo" onclick="slowScroll('#top') ">
+            <span>GameCenter</span>
+        </id>
+        <div id="nav"> 
+            <a href="#" title="about" >About Us</a> 
+            <a href="#" title="about" onclick="slowScroll('#category')">Categoria</a> 
+            <a href="#" title="about" >Our Team</a> 
+            <a href="#" title="about" onclick="slowScroll('#feedback')" >Feedback</a> 
+        </div>
+       <a href=""></a>
+    </header>
+    <div id="top">
+       <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+       <h3>Lorem ipsum dolor sit.</h3>
+      </div>
+
+      <div id="category"> 
+        <h2>Category</h2>
+        <h4>Choose your favourite one</h4>
+        <h5>And we will explain it</h5>
+    
+        <div class="img">
+          <a href="action.html"><img src="img/number1.jpg" alt=""></a>
+          <span>Action</span>
+        </div>
+        <div class="img">
+          <img src="img/number2.jpg" alt="">
+          <span>Role-Playing</span>
+        </div>
+        <div class="img">
+          <img src="img/number3.jpg" alt="">
+          <span>Strategy</span>
+        </div>
+        <div class="img">
+          <img src="img/number3.jpg" alt="">
+          <span>Puzzle</span>
+        </div>
+        <div class="img">
+          <img src="img/number3.jpg" alt="">
+          <span>Sport</span>
+        </div>
+        <div class="img">
+          <img src="img/number3.jpg" alt="">
+          <span>Arcade</span>
+        </div>
+      </div>
+      <div id="feedback">
+        <center><h5>FeedBack</h5></center>
+        <form id="form_input">
+          <label for="name">Name <span>*</span></label><br>
+          <input type="text" placeholder="Enter your name" name="name" id="name"><br>
+          <label for="email">Email <span>*</span></label><br>
+          <input type="email" placeholder="Enter your email" name="email" id="email"><br>
+          <label for="message">Comment <span>*</span></label><br>
+          <textarea placeholder="Write your comment" name="message" id="message"></textarea><br>
+          <div id="mess_send"  class="btn" >Send</div>
+        </form>
+      </div>
+      
+     
+
+		<footer class="footer">
+
+			<div class="footer-right">
+
+				<a href="#"><i class="fa fa-instagram"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-facebook"></i></a>
+
+
+			</div>
+
+			<div class="footer-left">
+
+				<p class="footer-links">
+					<a href="#" class="f1" onclick="slowScroll('#top') ">Home</a>
+
+					<a href="#">About us</a>
+
+					<a href="#" title="about" onclick="slowScroll('#category')">Categories</a> 
+
+					<a href="#">Our Team</a>
+
+					<a href="#" title="about" >Feedback</a> 
+
+				</p>
+
+				<p>Made in Turkmenistan &copy; 2021</p>
+			</div>
+
+		</footer>
+     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function slowScroll(id) {
+          $('html, body').animate({
+            scrollTop: $(id).offset().top
+          }, 500);
+        }
+    
+        $(document).on("scroll", function () {
+          if($(window).scrollTop() === 0)
+            $("header").removeClass("fixed");
+          else
+            $("header").attr("class", "fixed");
+        });
+    </script>
+   
+</body>
+</html> 
