@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h5 {font-size: inherit; font-weight: 400;}
 @import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
 
 html {
-    background-image: url(/img/bg.jpg);
+    background-image: url(img/bg.jpg);
     background-blend-mode: multiply;
     background-color: rgb(116, 114, 114);
     background-repeat: no-repeat;
