@@ -183,7 +183,7 @@ header.fixed #logo{
 /* categoria */
   #category {
     float: left;
-    background-image: url(img/number4.jpg);
+    background-image: url(.../img/number4.jpg);
 
     background-blend-mode: multiply;
     background-color: #403f40;
