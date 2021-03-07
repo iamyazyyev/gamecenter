@@ -253,14 +253,22 @@ header.fixed #logo{
     border-top: 3px solid rgb(44, 44, 44);
     background-image: url(img/cyberpunk.jpg);
     background-blend-mode: multiply;
-    background-color: #992d99;
+    background-color: #a16aa1;
     background-size: cover;
     background-attachment: fixed;
   }
   
+  
   h1, h2, h3, h4, h5 {
     font-family: 'Roboto Slab', serif;
     font-weight: lighter;
+    
+  }
+  h6{
+    margin-top: 10px;
+    font-family: 'Roboto Slab', serif;
+    color: rgb(17, 233, 64);
+    font-size: 1.1em;
     
   }
   #feedback h5{font-size: 3em; color: rgb(99, 180, 117);}
@@ -271,6 +279,7 @@ header.fixed #logo{
     font-size: 1.1em;
   }
   
+
   @media (min-width: 1051px) {
     #form_input {
       width: 35%;
