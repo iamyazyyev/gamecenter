@@ -10,16 +10,14 @@
 </head>
 <body>
     <header>
-        <id id="logo" onclick="slowScroll('#top') ">
-            <span>GameCenter</span>
-        </id>
+      <div id="logo" onclick="slowScroll('#top')">
+        <span>GameCenter</span>
+      </div>
         <div id="nav"> 
-            <a href="#" title="about" >About Us</a> 
-            <a href="#" title="about" onclick="slowScroll('#category')">Categoria</a> 
-            <a href="#" title="about" >Our Team</a> 
-            <a href="#" title="about" onclick="slowScroll('#feedback')" >Feedback</a> 
+          <a href="about.html" title="about" >About Us</a> 
+          <a href="#" title="about" onclick="slowScroll('#feedback')" >Feedback</a> 
+          <a href="#" title="about" onclick="slowScroll('#category')">Categories</a>   
         </div>
-       <a href=""></a>
     </header>
     <div id="top">
        <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
@@ -70,7 +68,7 @@
           <input type="radio" value="Female" name="gender" id="female"></input><br>
           <label for="message">Comment <span>*</span></label><br>
           <textarea placeholder="Write your comment" name="message" id="message"></textarea><br>
-          <input type="submit"  class="btn" ></input>
+          <button class="btn" > Send</button>
         </form>
       </div>
       

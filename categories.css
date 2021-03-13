@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+
+
 /* Nulling all browser's default styles */
 * {
     padding: 0;
@@ -33,12 +37,6 @@ h1, h2, h3, h4, h5, h5 {font-size: inherit; font-weight: 400;}
 
 /* ------------------------------------------------------- */
 
-
-/* Importing some fonts from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
-
-
 /* Main webpage settings */
 html {
     background-image: url(img/bg.jpg);
@@ -51,12 +49,13 @@ html {
 }
 
 body{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Suez One';
     position: relative;
 }
 
 
 /* Header styles */
+
 .header {
     background-image: linear-gradient(to left, #8739f9 0%, rgba(24,181,164,1) 50%, #c651cd 100%);;
     height: 70px;
@@ -67,7 +66,7 @@ body{
     line-height: 45px;
     margin-left: 40px;
     margin-top: 10px;
-    font-family: 'Suez One', serif;
+    font-family: 'Suez One';
     color: whitesmoke;
     transition-duration: 0.5s;
 }
