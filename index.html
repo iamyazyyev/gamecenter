@@ -10,8 +10,8 @@
 </head>
 <body>
     <header>
-      <div id="logo" onclick="slowScroll('#top')">
-        <span>GameCenter</span>
+      <div  onclick="slowScroll('#top')">
+        <img  src="/img/ninja.gif" alt="" class="logo">
       </div>
         <div id="nav"> 
           <a href="about.html" title="about" >About Us</a> 
@@ -19,9 +19,10 @@
           <a href="#" title="about" onclick="slowScroll('#category')">Categories</a>   
         </div>
     </header>
+    
     <div id="top">
-       <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
-       <h3>Lorem ipsum dolor sit.</h3>
+       <h2>Welcome To The Gaming Info Website</h2>
+       <h3>Let's Play On</h3>
       </div>
 
       <div id="category"> 
@@ -56,19 +57,21 @@
       </div>
       <div id="feedback">
         <center><h5>FeedBack</h5></center>
-        <form id="form_input" action="mailto:yaziev2002@gmail.com">
+        <form id="form_input" >
           <label for="name">Name <span>*</span></label><br>
           <input type="text" placeholder="Enter your name" name="name" id="name"><br>
           <label for="email">Email <span>*</span></label><br>
-          <input type="email" placeholder="Enter your email" name="email" id="email"><br>
+          <input type="email" placeholder="Enter your email" name="email" id="email" required><br>
           <label for="gender">Gender <span>*</span></label><br>
-          <h6>Male</h6>
-          <input type="radio" value="Male" name="gender" id="male"></input>
+          <h6>Male</h6> 
+          <input  type="radio" value="Male" name="gender" id="male" required></input>
           <h6>Female</h6>
-          <input type="radio" value="Female" name="gender" id="female"></input><br>
+          <input  type="radio" value="Female" name="gender" id="female" required></input><br>
           <label for="message">Comment <span>*</span></label><br>
-          <textarea placeholder="Write your comment" name="message" id="message"></textarea><br>
-          <button class="btn" > Send</button>
+          <textarea placeholder="Write your comment" name="message" id="message" required></textarea><br>
+          <button type="button" class="btn" > Send</button>
+          <button type="button" class="btn2" onclick="myFunction()"> Reset</button>
+
         </form>
       </div>
       
@@ -76,14 +79,8 @@
 
 		<footer class="footer">
 
-			<div class="footer-right">
-
-				<a href="#"><i class="fa fa-instagram"></i></a>
-				<a href="#"><i class="fa fa-twitter"></i></a>
-				<a href="#"><i class="fa fa-facebook"></i></a>
-
-
-			</div>
+			
+      <img class="footerimg" src="/img/x-logo.gif" width="120px" height="120px">
 
 			<div class="footer-left">
 
@@ -94,17 +91,25 @@
 
 					<a href="#" title="about" onclick="slowScroll('#category')">Categories</a> 
 
-					<a href="#">Our Team</a>
+				
 
-					<a href="#" title="about" >Feedback</a> 
+					<a href="#" title="about" onclick="slowScroll('#feedback')" >Feedback</a> 
 
 				</p>
+        <div class="footer-right">
 
-				<p>Made in Turkmenistan &copy; 2021</p>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          
+        </div>
+
+				<p class="copyright">Made in Turkmenistan &copy; 2021</p>
 			</div>
+      
 
 		</footer>
-     
+     <script src="main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         function slowScroll(id) {
