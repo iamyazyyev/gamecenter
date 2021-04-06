@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
 /* obnulenia */
 *{
@@ -52,7 +53,7 @@ body, html{
 
 body{
     background-color: black;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Montserrat';
 }
 
 header{
@@ -73,10 +74,10 @@ header #logo{
 }
 
 header #logo span{
-    font-size: 1.7em;
+    font-size: 1.9em;
     line-height: 45px;
     margin-left: 40px;
-    font-family: 'Suez One', serif;
+    font-family: 'Montserrat', serif;
 }
 
 #nav{
@@ -117,6 +118,7 @@ header #logo span{
 
 @media(max-width: 700px) { 
      .logo{
+
             margin-left: 10px;
             margin-top: -10px;
             width: 15%;
@@ -124,6 +126,7 @@ header #logo span{
              }
         
      #nav{
+          
           float: right;
           width: 100%;
             }
@@ -134,7 +137,7 @@ header #logo span{
 /* fiksaciya shapki */
 .fixed{
     z-index: 5000;
-    background-image: linear-gradient(65deg, rgba(61,20,114,1) 0%, rgba(40,10,80,1) 98%);
+    background-image: linear-gradient(to left, #c33764 0%, #1d2671 100%);
     border-bottom: 1px solid rgb(48, 4, 83);
 }
  
@@ -156,6 +159,16 @@ header.fixed #logo{
     text-align: center;
     color: #fff;
 }
+.audio{
+  margin: 50px auto;
+  display: block;
+  border-radius: 30px;
+  box-shadow: 0 0 25px rgb(241, 7, 241);
+  transition: 0.5s;
+}
+.audio:hover{
+  box-shadow: 0 0 30px 5px whitesmoke;
+}
 
 
 @media (min-width: 1001px) {
@@ -174,7 +187,7 @@ header.fixed #logo{
   @media (max-width: 650px) {
     #top {
       font-size: 1.3em;
-      padding-top: 50%;
+      padding-top: 50px;
       height: 500px;
     }
   }
@@ -185,83 +198,94 @@ header.fixed #logo{
     }
   }
   
-  #top h2 {
-    padding-top: 20%;
-  }
+ #top h2{
+   padding-top: 15%;
+ }
   
   #top h3 {
     color: rgb(136, 127, 127);
   }
+  #top img{
+    margin-top: -40px;
+    width: 120px;
+  }
 
   
 /* categoria */
-  #category {
-    float: left;
-    background-image: url(img/number4.jpg);
+#category {
+  float: left;
+  background-image: url(img/number4.jpg);
 
-    background-blend-mode: multiply;
-    background-color: #403f40;
-    background-size: cover;
-    background-attachment: fixed;
-  
-    padding: 100px 0px 0px 50px;
-    width: 100%;
-    text-align: center;
-    color: #fff;
-  }
-  .img{
-    margin-left: 100px;
-  }
-  
+  background-blend-mode: multiply;
+  background-color: #403f40;
+  background-size: cover;
+  background-attachment: fixed;
+
+  padding: 50px 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.category-image{
+  text-align: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin-left: -200px;
+	flex-wrap: wrap;
+}
+
+#category h2 {font-size: 4em}
+#category h4 {color: #ccc; font-size: 1.5em}
+
+@media (min-width: 561px) {
   #category h2 {font-size: 4em}
-  #category h4 {color: #ccc; font-size: 1.5em }
-  
-  @media (min-width: 561px) {
-    #category h2 h4 h5 {  
-      font-size: 4em;
-    }
-    
-  }
-  
-  @media (max-width: 560px) {
-    #category h2 {font-size: 2em }
-  }
-  
-  #category .img {
-    float: left;
-    width: 30%;
-    margin-right: 5%;
-    margin-top: 50px;
-  }
-  
-  #category .img:nth-child(odd) {
-    margin-left: 18%;
-  }
-  
-  #category img {
-    background: #fafafa;
-    padding: 5px;
-    border: 2px solid silver;
-    float: left;
+}
+
+@media (max-width: 560px) {
+  #category h2 {font-size: 2em}
+}
+
+
+#category .img {
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+  margin-top: 50px;
+}
+
+#category .img:nth-child(odd) {
+  margin-left: 18%;
+}
+
+#category img {
+  background: #fafafa;
+  padding: 5px;
+  border: 2px solid silver;
+  float: left;
+  width: 100%;
+  max-width: 500px;
+}
+
+#category span {
+  float: left;
+  width: 100%;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .category-image{
+    display: flex;
     width: 100%;
-    max-width: 500px;
+    margin-left: -45px;
+
   }
   
-  #category span {
-    float: left;
-    width: 100%;
-    font-size: 2em;
-    margin-top: 10px;
-  }
-  
-  @media (max-width: 700px) {
-    #category .img {
-      
-      width: 80%!important;
-      margin-right: 0!important;
-      margin-left: 3%!important;
-    }
-  }
+}
+
   
 
 
@@ -281,13 +305,13 @@ header.fixed #logo{
   
   
   h1, h2, h3, h4, h5 {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Montserrat', serif;
     font-weight: lighter;
     
   }
   h6{
     margin-top: 10px;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Montserrat', serif;
     color: #4FD1C5;
     font-size: 1.1em;
     
@@ -299,6 +323,17 @@ header.fixed #logo{
     margin-top: 15px;
     font-size: 1.1em;
   }
+  #form_input #male{
+    margin-top: 10px;
+    width: 20px;
+    font-family: 'Montserrat', serif;
+  }
+  #form_input #female{
+    margin-top: 10px;
+    width: 20px;
+    font-family: 'Montserrat', serif;
+  }
+  
  
   @media (min-width: 1051px) {
     #form_input {
@@ -318,7 +353,7 @@ header.fixed #logo{
     color: #4FD1C5;
     cursor: pointer;
     font-size: 1.4em;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Montserrat', serif;
   }
   
   #form_input label > span {
@@ -338,7 +373,7 @@ header.fixed #logo{
   #form_input input:focus, #form_input textarea:focus {
     border-color: #333;
   }
-
+ 
   
   .btn {
 
@@ -514,6 +549,7 @@ header.fixed #logo{
 
   
   .footer p.footer-links {
+    font-family: 'Montserrat';
     font-size: 18px;
     font-weight: bold;
     color: #ffffff;
@@ -523,6 +559,7 @@ header.fixed #logo{
   }
   
   .footer p.footer-links a {
+    font-family: 'Montserrat';
     display: inline-block;
     line-height: 1.8;
     text-decoration: none;

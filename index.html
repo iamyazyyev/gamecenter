@@ -11,7 +11,7 @@
 <body>
     <header>
       <div  onclick="slowScroll('#top')">
-        <img  src="/img/ninja.gif" alt="" class="logo">
+        <img  src="img/ninja.gif" alt="" class="logo">
       </div>
         <div id="nav"> 
           <a href="about.html" title="about" >About Us</a> 
@@ -23,15 +23,17 @@
     <div id="top">
        <h2>Welcome To The Gaming Info Website</h2>
        <h3>Let's Play On</h3>
+       <audio src="voice.mp3" class="audio" controls></audio>
+       <img src="img/x-logo.gif" alt="" srcset="">
       </div>
 
       <div id="category"> 
         <h2>Category</h2>
         <h4>Choose your favourite one</h4>
         <h5>And we will explain it</h5>
-    
+        <div class="category-image"> 
         <div class="img">
-          <a href="action.html"><img src="img/number1.jpg" alt=""></a>
+            <img src="img/number1.jpg" alt="" ></a>
           <span>Action</span>
         </div>
         <div class="img">
@@ -55,9 +57,10 @@
           <span>Arcade</span>
         </div>
       </div>
+    </div>
       <div id="feedback">
         <center><h5>FeedBack</h5></center>
-        <form id="form_input" >
+        <form id="form_input"  method="POST" action="main.php">
           <label for="name">Name <span>*</span></label><br>
           <input type="text" placeholder="Enter your name" name="name" id="name"><br>
           <label for="email">Email <span>*</span></label><br>
@@ -69,7 +72,7 @@
           <input  type="radio" value="Female" name="gender" id="female" required></input><br>
           <label for="message">Comment <span>*</span></label><br>
           <textarea placeholder="Write your comment" name="message" id="message" required></textarea><br>
-          <button type="button" class="btn" > Send</button>
+          <button type="submit" class="btn" > Send</button>
           <button type="button" class="btn2" onclick="myFunction()"> Reset</button>
 
         </form>
@@ -80,7 +83,7 @@
 		<footer class="footer">
 
 			
-      <img class="footerimg" src="/img/x-logo.gif" width="120px" height="120px">
+      <img class="footerimg" src="img/x-logo.gif" width="120px" height="120px">
 
 			<div class="footer-left">
 
